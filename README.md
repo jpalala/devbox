@@ -22,6 +22,7 @@ This setup is ideal if you want a **clean, disposable environment** without poll
 docker compose build
 ```
 
+
 This installs everything into the container.
 
 ---
@@ -44,7 +45,7 @@ You're now **inside the Alpine Devbox** using **Zsh**.
 
 ### 3. **Verify SSH is Working (Optional but Recommended)**
 
-If your host has an SSH key loaded, test it:
+If your host has an SSH key loaded (see [Loading an SSH Agent](#loading-an-ssh-agent)), you can test it with:
 
 ```bash
 ssh -T git@github.com
@@ -84,6 +85,12 @@ exit
 The dev environment **goes away cleanly** — nothing stays running in the background.
 
 ---
+
+### Loading an SSH Agent
+
+You can use `ssh-add` to add your ssh key into the ssh-agent. Here's how you can do so in windows:
+
+![Enable SSH Agent in PowerShell](./images/ssh-agent-setup.png)
 
 ## 💡 Why Use This?
 
