@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  devbox:
+    build: .
+    container_name: alpine-devbox
+    tty: true
+    stdin_open: true
+
+    # Mount current directory (optional - for working on files)
+    volumes:
+      - .:/workspace
+
+      # SSH agent forwarding
+      - ${SSH_AUTH_SOCK}:/ssh-agent
+    environment:
+      SSH_AUTH_SOCK: /ssh-agent
+
+    working_dir: /workspace
