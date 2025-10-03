@@ -9,7 +9,6 @@ It includes common command-line tools like:
 * ✅ `ag` (The Silver Searcher — faster search tool)
 * ✅ `openssh-client` (so you can run `ssh`, `git clone`, etc.)
 * ✅ SSH Agent Forwarding (so your SSH keys stay *outside* the container for security!)
-* ✅ *(optional)* `nano` or `vim` if you choose
 
 This setup is ideal if you want a **clean, disposable environment** without polluting your real machine.
 
